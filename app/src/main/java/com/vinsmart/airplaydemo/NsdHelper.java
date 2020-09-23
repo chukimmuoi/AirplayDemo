@@ -30,12 +30,12 @@ public class NsdHelper {
     NsdManager.DiscoveryListener mDiscoveryListener;
     NsdManager.RegistrationListener mRegistrationListener;
 
-//    public static final String SERVICE_TYPE = "_airplay._tcp";
+    public static final String SERVICE_TYPE = "_airplay._tcp";
 //    public static final String SERVICE_TYPE = "_raop._tcp";
-    public static final String SERVICE_TYPE = "_apple-mobdev2._tcp";
+//    public static final String SERVICE_TYPE = "_apple-mobdev2._tcp";
 
     public static final String TAG = "NsdHelper";
-    public String mServiceName = "NsdChat";
+    public String mServiceName = "AS-Live[AirPlay]";
 
     NsdServiceInfo mService;
 
