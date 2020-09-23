@@ -148,7 +148,7 @@ public class NsdHelper {
         tearDown();  // Cancel any previous registration request
         initializeRegistrationListener();
         NsdServiceInfo serviceInfo  = new NsdServiceInfo();
-        serviceInfo.setPort(port);
+        serviceInfo.setPort(5353);
         serviceInfo.setServiceName(mServiceName);
         serviceInfo.setServiceType(SERVICE_TYPE);
 
