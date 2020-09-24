@@ -148,9 +148,17 @@ public class NsdHelper {
         tearDown();  // Cancel any previous registration request
         initializeRegistrationListener();
         NsdServiceInfo serviceInfo  = new NsdServiceInfo();
-        serviceInfo.setPort(5353);
+        serviceInfo.setPort(7000);
         serviceInfo.setServiceName(mServiceName);
         serviceInfo.setServiceType(SERVICE_TYPE);
+        serviceInfo.setAttribute("flags", "0x44");
+        serviceInfo.setAttribute("pk", "1416597a6282561bca7bcab1b49b5768c70fd1ac2c06a77222e2c61b367acea4");
+        serviceInfo.setAttribute("pi", "5e66cf9b-0a39-4e0c-9d32-081a8ce63231");
+        serviceInfo.setAttribute("vv", "2");
+        serviceInfo.setAttribute("srcvers", "220.68");
+        serviceInfo.setAttribute("model", "AppleTV3,1");
+        serviceInfo.setAttribute("features", "0x5A7FFFF7,0xE");
+        serviceInfo.setAttribute("deviceid", "FA:8C:CA:AD:4A:38");
 
         mNsdManager.registerService(
                 serviceInfo, NsdManager.PROTOCOL_DNS_SD, mRegistrationListener);
